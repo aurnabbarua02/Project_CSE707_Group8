@@ -1,0 +1,72 @@
+Installation Prerequisites for Flutter Project
+=============================================
+
+Before running this Flutter project, ensure that the following tools and software are installed and properly configured on your system.
+
+1. Operating System
+-------------------
+- Windows 10 or later
+- macOS (latest stable version recommended)
+- Linux (Ubuntu 20.04 or later recommended)
+
+2. Flutter SDK
+--------------
+- Flutter SDK (stable channel)
+- Download from: https://flutter.dev/docs/get-started/install
+- Ensure Flutter is added to system PATH
+- Verify installation by running:
+  flutter doctor
+
+3. Dart SDK
+-----------
+- Dart SDK is included with Flutter
+- No separate installation required
+
+4. IDE / Code Editor (Any one)
+------------------------------
+- Android Studio (recommended)
+- Visual Studio Code
+- IntelliJ IDEA
+
+Required plugins:
+- Flutter plugin
+- Dart plugin
+
+5. Android Development (for Android build)
+------------------------------------------
+- Android Studio
+- Android SDK
+- Android Emulator or physical Android device
+- Enable USB debugging on physical device
+
+6. iOS Development (macOS only)
+-------------------------------
+- macOS
+- Xcode (latest version)
+- CocoaPods
+- iOS Simulator or physical iOS device
+
+7. Web Support (Optional)
+-------------------------
+- Google Chrome (latest version)
+- Enable web support by running:
+  flutter config --enable-web
+
+8. Desktop Support (Optional)
+-----------------------------
+- Windows: Visual Studio (Desktop development with C++)
+- macOS: Xcode
+- Linux: Required build tools (gcc, clang, make)
+
+9. Project Dependencies
+-----------------------
+After cloning the repository, run the following command in the project root directory:
+  flutter pub get
+
+10. Verify Setup
+----------------
+Run the following command to check environment setup:
+  flutter doctor
+
+Once all requirements are satisfied, you can run the project using:
+  flutter run
