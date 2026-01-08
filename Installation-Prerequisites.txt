@@ -1,4 +1,4 @@
-Installation Prerequisites for Flutter Project
+Installation Prerequisites for our project
 =============================================
 
 Before running this Flutter project, ensure that the following tools and software are installed and properly configured on your system.
