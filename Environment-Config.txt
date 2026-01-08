@@ -1,0 +1,166 @@
+Environment Configuration Guide for Our Project
+===================================================
+
+This document describes the step-by-step process to configure a machine
+to replicate the development, deployment, and experiment environment
+used for this Flutter project.
+
+--------------------------------------------------
+Step 1: Operating System Setup
+--------------------------------------------------
+1. Use one of the following operating systems:
+   - Windows 10 or later
+   - macOS 12 or later
+   - Ubuntu Linux 20.04 or later
+
+2. Ensure the system is up to date.
+
+Ubuntu:
+  sudo apt-get update
+  sudo apt-get upgrade
+
+--------------------------------------------------
+Step 2: Install Git and Clone the Repository
+--------------------------------------------------
+1. Install Git if not already installed.
+
+Ubuntu:
+  sudo apt-get install git
+
+Windows/macOS:
+  https://git-scm.com/
+
+2. Clone the project repository:
+
+  git clone <REPOSITORY_URL>
+  cd <PROJECT_FOLDER_NAME>
+
+--------------------------------------------------
+Step 3: Install Flutter SDK
+--------------------------------------------------
+1. Download Flutter SDK (stable channel):
+   https://flutter.dev/docs/get-started/install
+
+2. Extract Flutter to a desired directory.
+
+Ubuntu example:
+  tar xf flutter_linux_*.tar.xz
+  sudo mv flutter /opt/flutter
+
+3. Add Flutter to system PATH.
+
+Ubuntu:
+  export PATH="$PATH:/opt/flutter/bin"
+
+Windows:
+  Add <flutter_install_path>\bin to Environment Variables
+
+4. Verify installation:
+
+  flutter doctor
+
+--------------------------------------------------
+Step 4: Configure IDE
+--------------------------------------------------
+1. Install an IDE:
+   - Android Studio or
+   - Visual Studio Code
+
+2. Install required plugins:
+   - Flutter
+   - Dart
+
+3. Restart the IDE after plugin installation.
+
+--------------------------------------------------
+Step 5: Android Environment Configuration
+--------------------------------------------------
+1. Open Android Studio → SDK Manager.
+2. Install:
+   - Android SDK Platform
+   - Android SDK Build-Tools
+   - Android Emulator
+3. Create an Android Virtual Device (AVD).
+
+Verification:
+  flutter doctor
+
+--------------------------------------------------
+Step 6: Linux-Specific Dependency Configuration (Ubuntu)
+--------------------------------------------------
+Run the following commands:
+
+  sudo apt-get install -y curl git unzip xz-utils zip libglu1-mesa
+
+Optional (Desktop support):
+  sudo apt-get install -y clang cmake ninja-build pkg-config libgtk-3-dev
+
+--------------------------------------------------
+Step 7: Enable Required Flutter Platforms
+--------------------------------------------------
+Enable platform support as needed:
+
+Android:
+  flutter config --enable-android
+
+Web (Optional):
+  flutter config --enable-web
+
+Desktop (Optional):
+  flutter config --enable-linux-desktop
+  flutter config --enable-windows-desktop
+  flutter config --enable-macos-desktop
+
+--------------------------------------------------
+Step 8: Fetch Project Dependencies
+--------------------------------------------------
+Inside the project root directory, run:
+
+  flutter pub get
+
+This installs all third-party packages required by the project.
+
+--------------------------------------------------
+Step 9: Device / Emulator Setup
+--------------------------------------------------
+1. Start an Android Emulator from Android Studio
+   OR
+2. Connect a physical device with USB Debugging enabled.
+
+Verify connected devices:
+  flutter devices
+
+--------------------------------------------------
+Step 10: Run the Application
+--------------------------------------------------
+Execute the project using:
+
+  flutter run
+
+--------------------------------------------------
+Step 11: Deployment / Experiment Replication
+--------------------------------------------------
+1. Use the same Flutter channel:
+
+  flutter channel stable
+  flutter upgrade
+
+2. Run the project using the same target platform used in the experiment.
+
+Example:
+  flutter run -d chrome
+  flutter run -d android
+
+3. Observe outputs, logs, and UI behavior to replicate the experiment.
+
+--------------------------------------------------
+Step 12: Environment Validation
+--------------------------------------------------
+Final verification:
+
+  flutter doctor -v
+
+Ensure there are no unresolved issues.
+
+The environment is now fully configured to replicate the deployment
+and experimental setup used in this project.
