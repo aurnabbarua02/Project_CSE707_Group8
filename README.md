@@ -33,7 +33,7 @@ multiple connectors to simulate a distributed transaction pipeline. The project
 environment was configured, dependencies were managed, and the application was
 tested using predefined test credentials to replicate real usage scenarios.
 
-Video Demonstration: [Link](https://youtube.com/shorts/Ir21GbksqW0?feature=share)
+Video Demonstration: [![Link](https://img.youtube.com/vi/Ir21GbksqW0/0.jpg)](https://youtube.com/shorts/Ir21GbksqW0?feature=share)
 
 Author Information:
 -------------------
