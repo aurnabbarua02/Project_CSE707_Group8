@@ -25,19 +25,20 @@ by step across these nodes. This approach reflects real-world distributed
 financial systems, where multiple intermediaries and verification layers are
 used to ensure consistency, fault tolerance, and security.
 
-As part of this project, I performed several tasks including application design,
+As part of this project, we performed several tasks including application design,
 coding, configuration, and testing. The frontend was developed using Flutter,
 with user authentication, balance display, and transaction interfaces
-implemented in code. I also designed the logical transaction flow involving
+implemented in code. We also designed the logical transaction flow involving
 multiple connectors to simulate a distributed transaction pipeline. The project
 environment was configured, dependencies were managed, and the application was
 tested using predefined test credentials to replicate real usage scenarios.
 
 Video Demonstration:
 --------------------
-[Insert video demonstration link here]
+Link: https://youtube.com/shorts/Ir21GbksqW0?feature=share
 
 Author Information:
 -------------------
-Name: Aurnab Barua  
-Email: <your_email_address_here>
+Name: Aurnab Barua, Email: aurnab.barua@g.bracu.ac.bd
+Name: Emadul Islam, Email: emadul.islam@g.bracu.ac.bd
+
