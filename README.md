@@ -38,5 +38,6 @@ Video Demonstration: [Link](https://youtube.com/shorts/Ir21GbksqW0?feature=share
 Author Information:
 -------------------
 Name: Aurnab Barua, Email: aurnab.barua@g.bracu.ac.bd
+
 Name: Emadul Islam, Email: emadul.islam@g.bracu.ac.bd
 
