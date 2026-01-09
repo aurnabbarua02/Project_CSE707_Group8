@@ -1,6 +1,6 @@
 # Project_CSE707_Group8
 
-This project is a Flutter-based mobile application that simulates a secure
+This project is a Flutter-based application that simulates a secure
 digital banking system. The application allows users to log in, view their
 account balance, and transfer money to other registered users within the system.
 The main objective of the project is to demonstrate how secure money transfer
